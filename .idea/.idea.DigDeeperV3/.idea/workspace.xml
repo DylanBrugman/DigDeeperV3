@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b24c5c40-f0ea-4cce-8e13-c472f5287f7c" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "dylss"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DylanBrugman/DigDeeperV3.git&quot;,
+    &quot;accountId&quot;: &quot;ef4488e2-f474-4390-89e8-584bcadeb774&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/dylan/Unity/DigDeeperV3/Assets/Scripts/Core/Camera/CameraController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/dylan/Unity/DigDeeperV3/Assets/Scripts/Core/Grid/NativeChunkedGrid.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/dylan/Unity/DigDeeperV3/Assets/Scripts/Core/Grid/NativeChunkedGrid.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/dylan/Unity/DigDeeperV3/Assets/Scripts/GamePlay/Colonist/ColonistFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/Colonist/ColonistSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/Movement/MovementSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/Movement/VelocityComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/Needs/Need.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/Needs/NeedDecaySystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/Needs/NeedLevel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/dylan/Unity/DigDeeperV3/Assets/Scripts/GamePlay/World/Tilemap/Generator/Biome/BiomeConfig.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/dylan/Unity/DigDeeperV3/Assets/Scripts/GamePlay/World/Tilemap/Generator/MapProcessor/PostProcessor.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/dylan/Unity/DigDeeperV3/Assets/Scripts/GamePlay/World/Tilemap/Generator/MapProcessor/PostProcessor.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/WorldSystem/EditorTileComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/dylan/Unity/DigDeeperV3/Assets/Scripts/Systems/WorldSystem/TileClicker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@4d374c7eb6db/Rider/Editor/EditorPluginInterop.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@4d374c7eb6db/Rider/Editor/PostProcessors/RiderAssetPostprocessor.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2xgXJDkKCAq5sgYwKmsiQsmoQaV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "XThreadsFramesViewSplitterKey": "0.34508076",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.52f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\dylan\Unity\DigDeeperV3 -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\dylan\Unity\DigDeeperV3" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.52f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\dylan\Unity\DigDeeperV3 -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\dylan\Unity\DigDeeperV3" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b24c5c40-f0ea-4cce-8e13-c472f5287f7c" name="Changes" comment="" />
+      <created>1748360621617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748360621617</updated>
+      <workItem from="1748360624349" duration="19752000" />
+      <workItem from="1748421551150" duration="27861000" />
+      <workItem from="1748516339174" duration="8059000" />
+      <workItem from="1748954618649" duration="30387000" />
+      <workItem from="1749138477208" duration="9823000" />
+      <workItem from="1749737552326" duration="8391000" />
+      <workItem from="1749985515862" duration="18413000" />
+      <workItem from="1750261283845" duration="6102000" />
+      <workItem from="1750333826118" duration="5760000" />
+      <workItem from="1750344276266" duration="12910000" />
+      <workItem from="1750417355658" duration="3871000" />
+      <workItem from="1750430153702" duration="17431000" />
+      <workItem from="1750675453405" duration="1343000" />
+      <workItem from="1750707338166" duration="8646000" />
+      <workItem from="1750876840624" duration="8826000" />
+      <workItem from="1750934810897" duration="4339000" />
+      <workItem from="1750962694423" duration="8700000" />
+      <workItem from="1751005812979" duration="3852000" />
+      <workItem from="1751048504807" duration="38999000" />
+      <workItem from="1751320341826" duration="3768000" />
+      <workItem from="1751364425798" duration="15545000" />
+      <workItem from="1751439244066" duration="2961000" />
+      <workItem from="1751451970859" duration="4245000" />
+      <workItem from="1751490443046" duration="5042000" />
+      <workItem from="1751569159053" duration="6250000" />
+      <workItem from="1751644760634" duration="13545000" />
+      <workItem from="1751793593005" duration="4099000" />
+      <workItem from="1751901370638" duration="1482000" />
+      <workItem from="1752000765616" duration="290000" />
+      <workItem from="1752001102746" duration="477000" />
+      <workItem from="1752217682116" duration="646000" />
+      <workItem from="1752390285611" duration="1948000" />
+      <workItem from="1752448119801" duration="218000" />
+      <workItem from="1752489449481" duration="1317000" />
+      <workItem from="1752772717785" duration="1463000" />
+      <workItem from="1752865333092" duration="602000" />
+      <workItem from="1765228303452" duration="3501000" />
+      <workItem from="1765321723899" duration="1476000" />
+    </task>
+    <task id="LOCAL-00001" summary="old pc">
+      <option name="closed" value="true" />
+      <created>1751901612686</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751901612687</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init">
+      <option name="closed" value="true" />
+      <created>1765322413836</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765322413836</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="old pc" />
+    <MESSAGE value="init" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
