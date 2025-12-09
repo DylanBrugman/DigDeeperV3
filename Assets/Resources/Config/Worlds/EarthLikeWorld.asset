@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ede1890cbcf849f6ae4ca07668cbea1b, type: 3}
+  m_Name: EarthLikeWorld
+  m_EditorClassIdentifier: 
+  worldSize: {x: 50, y: 200}
+  surfaceLevel: 20
+  seed: 12345
+  terrainScale: 0.08
+  terrainAmplitude: 11.49
+  caveScale: 0.04
+  caveThreshold: 0.65
+  earthLayers:
+  - layerName: Surface
+    startDepth: -20
+    endDepth: 2
+    primaryTileType: 1
+    secondaryTileTypes: 
+    temperature: 20
+    pressure: 1
+    density: 1
+    flowIntensity: 0.3
+    flowScale: 0.02
+    flowOffset: 0
+    useVoronoi: 0
+    voronoiPoints: 15
+    voronoiInfluence: 0.5
+    secondaryMaterialFlow: 0.2
+    secondaryFlowScale: 0.015
+    resourceRules: []
+  - layerName: Shallow Rock
+    startDepth: 3
+    endDepth: 20
+    primaryTileType: 5
+    secondaryTileTypes: 
+    temperature: 25
+    pressure: 1.5
+    density: 1
+    flowIntensity: 0.3
+    flowScale: 0.02
+    flowOffset: 0
+    useVoronoi: 0
+    voronoiPoints: 15
+    voronoiInfluence: 0.5
+    secondaryMaterialFlow: 0.2
+    secondaryFlowScale: 0.015
+    resourceRules: []
+  - layerName: Deep Rock
+    startDepth: 10
+    endDepth: 50
+    primaryTileType: 7
+    secondaryTileTypes: 
+    temperature: 40
+    pressure: 3
+    density: 1
+    flowIntensity: 0.3
+    flowScale: 0.02
+    flowOffset: 0
+    useVoronoi: 0
+    voronoiPoints: 15
+    voronoiInfluence: 0.5
+    secondaryMaterialFlow: 0.2
+    secondaryFlowScale: 0.015
+    resourceRules: []
+  - layerName: Bedrock
+    startDepth: 30
+    endDepth: 200
+    primaryTileType: 9
+    secondaryTileTypes: 
+    temperature: 80
+    pressure: 5
+    density: 1
+    flowIntensity: 0.514
+    flowScale: 0.0101
+    flowOffset: 0
+    useVoronoi: 0
+    voronoiPoints: 15
+    voronoiInfluence: 0.5
+    secondaryMaterialFlow: 0.2
+    secondaryFlowScale: 0.015
+    resourceRules: []
+  biomeScale: 0.35
+  generateResources: 1
+  globalResourceMultiplier: 1
+  globalResourceRules:
+  - resourceType: 1
+    spawnChance: 0.12
+    minAbundance: 30
+    maxAbundance: 90
+    baseQuality: 50
+    clusterSize: {x: 5, y: 12}
+    requiresSpecificTileType: 0
+    requiredTileType: 5
+  - resourceType: 2
+    spawnChance: 0.08
+    minAbundance: 20
+    maxAbundance: 70
+    baseQuality: 60
+    clusterSize: {x: 3, y: 8}
+    requiresSpecificTileType: 0
+    requiredTileType: 5
+  - resourceType: 3
+    spawnChance: 0.06
+    minAbundance: 15
+    maxAbundance: 55
+    baseQuality: 65
+    clusterSize: {x: 2, y: 6}
+    requiresSpecificTileType: 0
+    requiredTileType: 5
+  - resourceType: 7
+    spawnChance: 0.02
+    minAbundance: 5
+    maxAbundance: 25
+    baseQuality: 85
+    clusterSize: {x: 1, y: 3}
+    requiresSpecificTileType: 0
+    requiredTileType: 5
+  - resourceType: 1
+    spawnChance: 0.1
+    minAbundance: 20
+    maxAbundance: 80
+    baseQuality: 50
+    clusterSize: {x: 3, y: 8}
+    requiresSpecificTileType: 0
+    requiredTileType: 5
+  - resourceType: 2
+    spawnChance: 0.08
+    minAbundance: 15
+    maxAbundance: 60
+    baseQuality: 60
+    clusterSize: {x: 2, y: 6}
+    requiresSpecificTileType: 0
+    requiredTileType: 5
+  - resourceType: 7
+    spawnChance: 0.02
+    minAbundance: 5
+    maxAbundance: 30
+    baseQuality: 80
+    clusterSize: {x: 1, y: 3}
+    requiresSpecificTileType: 0
+    requiredTileType: 5
+  pointsOfInterest:
+  - id: ancient_cave
+    displayName: Ancient Cave
+    size: {x: 8, y: 6}
+    guaranteedResources:
+    - type: 7
+      abundance: 50
+      quality: 90
+      accessibility: 100
+    - type: 10
+      abundance: 20
+      quality: 95
+      accessibility: 100
+    spawnWeight: 1
+    minDistanceFromOthers: 30
+    spawnOnSurface: 0
+    depthRange: {x: 15, y: 40}
+  autoUpdateOnChange: 1
+  updateDelay: 0.5
+  useMultithreading: 0
+  chunkSize: 64
+  layerScale: 0.3

@@ -1,0 +1,504 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef64902e5f24d0ea722699ed26ddb98, type: 3}
+  m_Name: ComplexEarth_Massive
+  m_EditorClassIdentifier: 
+  worldSize: {x: 800, y: 150}
+  surfaceLevel: 105
+  seed: 13624
+  terrainScale: 0.015
+  terrainAmplitude: 12
+  caveScale: 0.06
+  caveThreshold: 0.68
+  earthLayers: []
+  biomeScale: 0.008
+  biomeConfigs: []
+  generateResources: 1
+  globalResourceMultiplier: 0.8
+  globalResourceRules:
+  - resourceType: 4
+    spawnChance: 0.3
+    minAbundance: 40
+    maxAbundance: 100
+    baseQuality: 50
+    clusterSize: {x: 6, y: 15}
+    requiresSpecificTileType: 1
+    requiredTileType: 5
+  - resourceType: 1
+    spawnChance: 0.18
+    minAbundance: 30
+    maxAbundance: 85
+    baseQuality: 65
+    clusterSize: {x: 4, y: 12}
+    requiresSpecificTileType: 0
+    requiredTileType: 5
+  - resourceType: 2
+    spawnChance: 0.14
+    minAbundance: 25
+    maxAbundance: 75
+    baseQuality: 70
+    clusterSize: {x: 3, y: 9}
+    requiresSpecificTileType: 0
+    requiredTileType: 5
+  - resourceType: 3
+    spawnChance: 0.1
+    minAbundance: 20
+    maxAbundance: 65
+    baseQuality: 75
+    clusterSize: {x: 2, y: 7}
+    requiresSpecificTileType: 0
+    requiredTileType: 5
+  - resourceType: 8
+    spawnChance: 0.04
+    minAbundance: 10
+    maxAbundance: 45
+    baseQuality: 85
+    clusterSize: {x: 1, y: 4}
+    requiresSpecificTileType: 0
+    requiredTileType: 5
+  - resourceType: 7
+    spawnChance: 0.025
+    minAbundance: 8
+    maxAbundance: 35
+    baseQuality: 90
+    clusterSize: {x: 1, y: 3}
+    requiresSpecificTileType: 0
+    requiredTileType: 5
+  - resourceType: 9
+    spawnChance: 0.008
+    minAbundance: 3
+    maxAbundance: 20
+    baseQuality: 95
+    clusterSize: {x: 1, y: 2}
+    requiresSpecificTileType: 0
+    requiredTileType: 5
+  - resourceType: 10
+    spawnChance: 0.005
+    minAbundance: 2
+    maxAbundance: 15
+    baseQuality: 98
+    clusterSize: {x: 1, y: 2}
+    requiresSpecificTileType: 0
+    requiredTileType: 5
+  pointsOfInterest:
+  - id: coal_seam
+    displayName: Rich Coal Seam
+    size: {x: 8, y: 3}
+    guaranteedResources:
+    - type: 1
+      abundance: 85
+      quality: 80
+      accessibility: 100
+    - type: 4
+      abundance: 60
+      quality: 65
+      accessibility: 100
+    spawnWeight: 3
+    minDistanceFromOthers: 30
+    spawnOnSurface: 0
+    depthRange: {x: 8, y: 18}
+  - id: iron_deposit
+    displayName: Iron Ore Deposit
+    size: {x: 6, y: 4}
+    guaranteedResources:
+    - type: 2
+      abundance: 75
+      quality: 85
+      accessibility: 100
+    - type: 3
+      abundance: 40
+      quality: 70
+      accessibility: 100
+    spawnWeight: 2
+    minDistanceFromOthers: 35
+    spawnOnSurface: 0
+    depthRange: {x: 12, y: 25}
+  - id: precious_vein
+    displayName: Precious Metal Vein
+    size: {x: 5, y: 2}
+    guaranteedResources:
+    - type: 7
+      abundance: 60
+      quality: 90
+      accessibility: 100
+    - type: 8
+      abundance: 45
+      quality: 85
+      accessibility: 100
+    spawnWeight: 1
+    minDistanceFromOthers: 50
+    spawnOnSurface: 0
+    depthRange: {x: 20, y: 35}
+  - id: ancient_cavern
+    displayName: Ancient Crystal Cavern
+    size: {x: 10, y: 6}
+    guaranteedResources:
+    - type: 10
+      abundance: 35
+      quality: 98
+      accessibility: 100
+    - type: 9
+      abundance: 25
+      quality: 95
+      accessibility: 100
+    - type: 20
+      abundance: 50
+      quality: 90
+      accessibility: 100
+    spawnWeight: 0.3
+    minDistanceFromOthers: 80
+    spawnOnSurface: 0
+    depthRange: {x: 30, y: 45}
+  - id: geothermal_vent
+    displayName: Geothermal Energy Vent
+    size: {x: 4, y: 8}
+    guaranteedResources:
+    - type: 17
+      abundance: 90
+      quality: 85
+      accessibility: 100
+    - type: 7
+      abundance: 30
+      quality: 80
+      accessibility: 100
+    spawnWeight: 0.8
+    minDistanceFromOthers: 60
+    spawnOnSurface: 0
+    depthRange: {x: 25, y: 40}
+  flowingEarthLayers:
+  - layerName: Rich Topsoil
+    startDepth: 0
+    endDepth: 2
+    primaryTileType: 2
+    secondaryTileTypes: 0300000004000000
+    density: 0.7
+    temperature: 18
+    pressure: 1
+    resourceRules:
+    - resourceType: 5
+      spawnChance: 0.12
+      minAbundance: 30
+      maxAbundance: 70
+      baseQuality: 45
+      clusterSize: {x: 3, y: 8}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    flowIntensity: 0.25
+    flowScale: 0.03
+    flowOffset: 1
+    useVoronoi: 0
+    voronoiPoints: 15
+    voronoiInfluence: 0.5
+    secondaryMaterialFlow: 0.15
+    secondaryFlowScale: 0.04
+  - layerName: Weathered Subsoil
+    startDepth: 2
+    endDepth: 8
+    primaryTileType: 3
+    secondaryTileTypes: 040000000200000005000000
+    density: 1
+    temperature: 20
+    pressure: 1.2
+    resourceRules:
+    - resourceType: 6
+      spawnChance: 0.18
+      minAbundance: 40
+      maxAbundance: 80
+      baseQuality: 50
+      clusterSize: {x: 4, y: 10}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    - resourceType: 4
+      spawnChance: 0.08
+      minAbundance: 25
+      maxAbundance: 60
+      baseQuality: 55
+      clusterSize: {x: 2, y: 6}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    flowIntensity: 0.4
+    flowScale: 0.025
+    flowOffset: 2
+    useVoronoi: 1
+    voronoiPoints: 12
+    voronoiInfluence: 0.3
+    secondaryMaterialFlow: 0.25
+    secondaryFlowScale: 0.03
+  - layerName: Sedimentary Formation
+    startDepth: 8
+    endDepth: 18
+    primaryTileType: 6
+    secondaryTileTypes: 0500000004000000
+    density: 1.3
+    temperature: 25
+    pressure: 1.8
+    resourceRules:
+    - resourceType: 1
+      spawnChance: 0.22
+      minAbundance: 35
+      maxAbundance: 85
+      baseQuality: 65
+      clusterSize: {x: 5, y: 12}
+      requiresSpecificTileType: 1
+      requiredTileType: 5
+    - resourceType: 2
+      spawnChance: 0.15
+      minAbundance: 25
+      maxAbundance: 70
+      baseQuality: 60
+      clusterSize: {x: 3, y: 8}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    flowIntensity: 0.5
+    flowScale: 0.02
+    flowOffset: 3
+    useVoronoi: 1
+    voronoiPoints: 18
+    voronoiInfluence: 0.4
+    secondaryMaterialFlow: 0.3
+    secondaryFlowScale: 0.025
+  - layerName: Metamorphic Transition Zone
+    startDepth: 18
+    endDepth: 28
+    primaryTileType: 8
+    secondaryTileTypes: 0700000005000000
+    density: 1.6
+    temperature: 35
+    pressure: 2.5
+    resourceRules:
+    - resourceType: 3
+      spawnChance: 0.18
+      minAbundance: 30
+      maxAbundance: 75
+      baseQuality: 70
+      clusterSize: {x: 4, y: 9}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    - resourceType: 8
+      spawnChance: 0.08
+      minAbundance: 15
+      maxAbundance: 50
+      baseQuality: 80
+      clusterSize: {x: 2, y: 5}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    flowIntensity: 0.7
+    flowScale: 0.018
+    flowOffset: 4
+    useVoronoi: 1
+    voronoiPoints: 25
+    voronoiInfluence: 0.6
+    secondaryMaterialFlow: 0.4
+    secondaryFlowScale: 0.02
+  - layerName: Deep Igneous Intrusions
+    startDepth: 28
+    endDepth: 40
+    primaryTileType: 7
+    secondaryTileTypes: 0800000009000000
+    density: 2
+    temperature: 50
+    pressure: 3.5
+    resourceRules:
+    - resourceType: 7
+      spawnChance: 0.06
+      minAbundance: 10
+      maxAbundance: 45
+      baseQuality: 85
+      clusterSize: {x: 1, y: 4}
+      requiresSpecificTileType: 1
+      requiredTileType: 7
+    - resourceType: 9
+      spawnChance: 0.02
+      minAbundance: 5
+      maxAbundance: 25
+      baseQuality: 95
+      clusterSize: {x: 1, y: 2}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    flowIntensity: 0.8
+    flowScale: 0.015
+    flowOffset: 6
+    useVoronoi: 1
+    voronoiPoints: 20
+    voronoiInfluence: 0.7
+    secondaryMaterialFlow: 0.35
+    secondaryFlowScale: 0.018
+  - layerName: Precambrian Bedrock
+    startDepth: 40
+    endDepth: 120
+    primaryTileType: 9
+    secondaryTileTypes: 07000000
+    density: 2.5
+    temperature: 80
+    pressure: 5
+    resourceRules:
+    - resourceType: 10
+      spawnChance: 0.015
+      minAbundance: 3
+      maxAbundance: 20
+      baseQuality: 98
+      clusterSize: {x: 1, y: 2}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    - resourceType: 14
+      spawnChance: 0.008
+      minAbundance: 5
+      maxAbundance: 30
+      baseQuality: 90
+      clusterSize: {x: 1, y: 3}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    flowIntensity: 0.3
+    flowScale: 0.01
+    flowOffset: 2
+    useVoronoi: 1
+    voronoiPoints: 8
+    voronoiInfluence: 0.4
+    secondaryMaterialFlow: 0.1
+    secondaryFlowScale: 0.012
+  depthLimitedBiomes:
+  - biomeType: 0
+    biomeColor: {r: 0.3, g: 0.8, b: 0.3, a: 1}
+    temperatureModifier: 0
+    humidityRange: 0.6
+    preferredSurfaceTiles: 01000000
+    biomeSpecificResources:
+    - resourceType: 5
+      spawnChance: 0.2
+      minAbundance: 40
+      maxAbundance: 80
+      baseQuality: 50
+      clusterSize: {x: 3, y: 7}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    limitByDepth: 1
+    minDepth: 0
+    maxDepth: 5
+    depthFalloff: 0.3
+  - biomeType: 5
+    biomeColor: {r: 0.6, g: 0.6, b: 0.7, a: 1}
+    temperatureModifier: -8
+    humidityRange: 0.4
+    preferredSurfaceTiles: 05000000
+    biomeSpecificResources:
+    - resourceType: 4
+      spawnChance: 0.3
+      minAbundance: 50
+      maxAbundance: 90
+      baseQuality: 60
+      clusterSize: {x: 5, y: 12}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    - resourceType: 2
+      spawnChance: 0.18
+      minAbundance: 30
+      maxAbundance: 70
+      baseQuality: 75
+      clusterSize: {x: 3, y: 8}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    limitByDepth: 1
+    minDepth: 0
+    maxDepth: 8
+    depthFalloff: 0.2
+  - biomeType: 1
+    biomeColor: {r: 0.9, g: 0.8, b: 0.4, a: 1}
+    temperatureModifier: 15
+    humidityRange: 0.1
+    preferredSurfaceTiles: 04000000
+    biomeSpecificResources:
+    - resourceType: 6
+      spawnChance: 0.4
+      minAbundance: 60
+      maxAbundance: 100
+      baseQuality: 45
+      clusterSize: {x: 6, y: 15}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    limitByDepth: 1
+    minDepth: 0
+    maxDepth: 3
+    depthFalloff: 0.4
+  - biomeType: 4
+    biomeColor: {r: 0.4, g: 0.6, b: 0.4, a: 1}
+    temperatureModifier: 5
+    humidityRange: 0.9
+    preferredSurfaceTiles: 03000000
+    biomeSpecificResources:
+    - resourceType: 1
+      spawnChance: 0.25
+      minAbundance: 40
+      maxAbundance: 85
+      baseQuality: 55
+      clusterSize: {x: 4, y: 10}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    limitByDepth: 1
+    minDepth: 0
+    maxDepth: 6
+    depthFalloff: 0.25
+  - biomeType: 3
+    biomeColor: {r: 0.8, g: 0.3, b: 0.2, a: 1}
+    temperatureModifier: 30
+    humidityRange: 0.2
+    preferredSurfaceTiles: 
+    biomeSpecificResources:
+    - resourceType: 7
+      spawnChance: 0.12
+      minAbundance: 20
+      maxAbundance: 60
+      baseQuality: 85
+      clusterSize: {x: 2, y: 6}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    - resourceType: 17
+      spawnChance: 0.08
+      minAbundance: 30
+      maxAbundance: 80
+      baseQuality: 80
+      clusterSize: {x: 3, y: 8}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    limitByDepth: 1
+    minDepth: 15
+    maxDepth: 120
+    depthFalloff: 0.1
+  - biomeType: 2
+    biomeColor: {r: 0.3, g: 0.3, b: 0.4, a: 1}
+    temperatureModifier: -10
+    humidityRange: 0.8
+    preferredSurfaceTiles: 
+    biomeSpecificResources:
+    - resourceType: 10
+      spawnChance: 0.025
+      minAbundance: 5
+      maxAbundance: 30
+      baseQuality: 95
+      clusterSize: {x: 1, y: 3}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    - resourceType: 20
+      spawnChance: 0.05
+      minAbundance: 15
+      maxAbundance: 50
+      baseQuality: 85
+      clusterSize: {x: 2, y: 5}
+      requiresSpecificTileType: 0
+      requiredTileType: 5
+    limitByDepth: 1
+    minDepth: 25
+    maxDepth: 120
+    depthFalloff: 0.15
+  autoUpdateOnChange: 1
+  updateDelay: 0.3
+  useMultithreading: 0
+  chunkSize: 64
