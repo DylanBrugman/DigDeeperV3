@@ -37,6 +37,7 @@ namespace Core.Grid {
             _chunkLookup = new NativeParallelHashMap<int2, int>(initialChunkCapacity, allocator);
             _dirtyChunks = new NativeParallelHashSet<int2>(initialChunkCapacity, allocator);
             _data = new NativeList<T>(initialChunkCapacity * CellsPerChunk, allocator);
+            
         }
 
         public void Dispose() {
@@ -52,7 +53,7 @@ namespace Core.Grid {
 
             if (!_chunkLookup.TryGetValue(chunkCoord, out int chunkIndex))
                 chunkIndex = CreateChunk(chunkCoord);
-
+            
             int localIndex = (x & ChunkMask) + (y & ChunkMask) * ChunkSide;
             _data[chunkIndex * CellsPerChunk + localIndex] = value;
             _dirtyChunks.Add(chunkCoord);

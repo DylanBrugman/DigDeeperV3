@@ -15,7 +15,7 @@ namespace GamePlay.World {
         public Random Random { get; private set; }
         public TileGrid TileGrid { get; private set; }
         public DepthGrid DepthGrid { get; internal set; }
-        public Dictionary<BiomeConfig, float> BiomeNoiseOffsets { get; }
+        // public Dictionary<BiomeConfig, float> BiomeNoiseOffsets { get; }
         public byte[] SurfaceHeights { get; internal set; }
 
         public WorldGenerationContext(WorldGenerationConfig config, Random random) {
