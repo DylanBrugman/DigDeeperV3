@@ -22,4 +22,14 @@ namespace GamePlay.World {
             [Range(0f, 1f)] public float depthFalloff = 0.2f; // How quickly influence fades at depth limits
         }
     }
+
+    public enum BiomeType {
+        Forrest,
+        Grassland,
+        Swamp,
+        Desert,
+        Tundra,
+        Snow,
+    }
+
 }
