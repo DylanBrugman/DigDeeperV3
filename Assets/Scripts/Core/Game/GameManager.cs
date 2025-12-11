@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour {
                 }
                 break;
             case GameState.Playing:
-                _worldLoader.Load(worldSourceType);
+                // _worldLoader.Load(worldSourceType);
                 break;
             case GameState.Paused:
                 break;
