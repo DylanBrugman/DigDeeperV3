@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Systems.NeedsSystem;
 using UnityEngine;
 
 namespace Systems.ColonistSystem {
@@ -14,9 +13,6 @@ namespace Systems.ColonistSystem {
         
         [Header("Skills")]
         public List<SkillConfig> startingSkills = new List<SkillConfig>();
-
-        [Header("NeedConfig Configuration")]
-        public List<NeedConfig> baseNeeds = new List<NeedConfig>();
 
         public float InitialHunger { get; set; }
         public float InitialThirst { get; set; }

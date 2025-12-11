@@ -6,6 +6,7 @@ using System.Threading;
 using Core;
 using Core.ECS;
 using GamePlay.Map;
+using ScriptsV2.Features.World;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,14 +14,13 @@ namespace GamePlay.World {
     public sealed class WorldLoader : MonoBehaviour {
         
         [SerializeField] private string gameplayScene = "GameScene";
-        [SerializeField] private WorldGeneratedPrefab worldSaveScriptableObject;
+        [SerializeField] private WorldGeneratedConfig worldSaveScriptableObject;
         
         public event Action<float> OnProgress; // 0‑1 progress bar
         public event Action OnWorldReady; // fired after PostScene spawners
 
         private List<IWorldSpawner> _spawners = new List<IWorldSpawner>();
         private CancellationTokenSource _cts;
-        private ECSWorld _ecsWorld = null;
         private WorldGenerator _worldGenerator;
 
         private void Awake() {
@@ -29,9 +29,7 @@ namespace GamePlay.World {
         }
 
         private void Start() {
-            _ecsWorld = ServiceLocator.GetOrThrow<ECSWorld>();
             _worldGenerator = ServiceLocator.GetOrThrow<WorldGenerator>();
-            
             _spawners = ServiceLocator.GetAll<IWorldSpawner>().ToList();
         }
         
@@ -63,7 +61,7 @@ namespace GamePlay.World {
             var sceneOp = SceneManager.LoadSceneAsync(gameplayScene, LoadSceneMode.Additive);
             sceneOp.allowSceneActivation = false;
 
-            WorldData bundle = null;
+            WorldDTO bundle = null;
             bool done = false;
             var loadEnum = worldSource.LoadCoroutine(worldData => {
                     bundle = worldData;

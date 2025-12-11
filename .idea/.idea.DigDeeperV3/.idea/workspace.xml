@@ -4,11 +4,107 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78db339b-d8f4-4b7f-99fc-b89573f2f9ad" name="Changes" comment="Deleted ECS System scripts">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DigDeeperV3/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DigDeeperV3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DigDeeperV3/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="78db339b-d8f4-4b7f-99fc-b89573f2f9ad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Config.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Model.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Model/TilemapGeneratorContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/IWorldSource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/IWorldSpawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/IWorldSpawner.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/WorldManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/WorldManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/ChatGPTPLan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/ChatGPTPLan.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/ChatGPTPLan.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/ChatGPTPLan.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/EdgeAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/EdgeAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/EdgeAction.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/EdgeAction.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/Nav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/Nav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/Nav/NavBits.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/Nav/NavBits.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/Nav/NavBits.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/Nav/NavBits.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/Nav/NavChunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/Nav/NavChunk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/Nav/NavChunk.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/Nav/NavChunk.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/Nav/NavGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/Nav/NavGrid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/Nav/NavGrid.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/Nav/NavGrid.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/Nav/NavRebuildSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/Nav/NavRebuildSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/Nav/NavRebuildSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/Nav/NavRebuildSystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/NodeAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/NodeAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/NodeAction.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/NodeAction.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/PathEdge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/PathEdge.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/PathEdge.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/PathEdge.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/PathGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/PathGraph.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/PathGraph.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/PathGraph.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/PathNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/PathNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/PathNode.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/PathNode.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/PathNodeGraphPopulator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/PathNodeGraphPopulator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlay/Pathfinding/PathNodeGraphPopulator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/Pathfinding/PathNodeGraphPopulator.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/ColonistSystem/ColonistConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/ColonistSystem/ColonistConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/BiomeConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/BiomeConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/IWorldGenerationStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/IWorldGenerationStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/IWorldGenerationStep.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/IWorldGenerationStep.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/IWorldSource.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/IWorldSource.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/IWorldSource.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/IWorldSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/IWorldSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/PrefabSpawnInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Config/PrefabSpawnConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/PrefabSpawnInfo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Config/PrefabSpawnConfig.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Chunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Model/Chunk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Chunk.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Model/Chunk.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/DepthGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Model/DepthGrid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/DepthGrid.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Model/DepthGrid.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/GenerationPipeline.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/GenerationPipeline/TilemapGenerationPipeline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/TilemapGenerationPipeline.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/GenerationPipeline/TilemapGenerationPipeline.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/TilemapGenerationPipeline.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/GenerationPipeline/TilemapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/TilemapGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/GenerationPipeline/TilemapGenerator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/TilemapGenerator.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/Biome.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/Biome/BiomeConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Config/BiomeConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/Biome/BiomeConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Config/BiomeConfig.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/EarthLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Model/EarthLayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/EarthLayer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Model/EarthLayer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/MapProcessor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/MapProcessor/PostProcessor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/PointOfInterestConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Config/PointOfInterestConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/PointOfInterestConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Config/PointOfInterestConfig.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Model/Tile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/Tile.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Model/Tile.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/TilemapGeneratorContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/TilemapGeneratorContext.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Model/TilemapGeneratorContext.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/TilemapWorldGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/TilemapWorldGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/TilemapWorldGenerator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/TilemapWorldGenerator.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/VoronoiGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/VoronoiGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Generator/VoronoiGenerator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/VoronoiGenerator.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Tile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/Tile.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/TileChunk.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/TileChunk.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/TileGrid.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/TileGrid.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/TileType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Model/TileType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/TileType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Model/TileType.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/TilemapSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Tilemap/TilemapSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Model/WorldDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Model/WorldDTO.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldGeneratedPrefab.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Config/WorldGeneratedConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldGeneratedPrefab.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Config/WorldGeneratedConfig.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldGenerationConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Config/WorldGenerationConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldGenerationConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/Config/WorldGenerationConfig.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldGenerationContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/WorldGenerationContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldGenerationContext.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/WorldGenerationContext.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/WorldGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldGenerator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/WorldGenerator.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/WorldLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldLoader.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/WorldLoader.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldRuntime.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldRuntime.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldRuntimeContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldRuntimeContext.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldSourceType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/WorldSourceType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldSourceType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/WorldSourceType.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,18 +128,19 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/efc248d94bee4807a3752d560fc4c17057c00/f2/e05986bf/Resource.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Bootstrapper/BootstrapManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Bootstrapper/BootstrapManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Bootstrapper/Bootstrapper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Camera/CameraController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/EventManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/EventManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Game/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/Colonist/ColonistFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/Colonist/ColonistFactory.cs.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/World/BiomeConfig.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/World/IWorldGenerationStep.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePlay/World/IWorldSpawner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Grid/ChunkedGrid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Int2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/InputSystem/TileSelector.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/DigDeeperScriptsBackup/Features/World/Grid/Chunk.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/dylan/Unity/DigDeeperV3/Assets/ScriptsV2/Features/World/IWorldSource.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/dylan/Unity/DigDeeperV3/Assets/ScriptsV2/Features/World/IWorldSource.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/dylan/Unity/DigDeeperV3/Assets/ScriptsV2/Features/World/PrefabSpawnInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScriptsV2/Features/World/System/IWorldGenerationStep.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/dylan/Unity/DigDeeperV3/Assets/ScriptsV2/Features/World/WorldLoader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@4d374c7eb6db/Rider/Editor/EditorPluginInterop.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@4d374c7eb6db/Rider/Editor/PostProcessors/RiderAssetPostprocessor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -164,8 +261,41 @@
       <workItem from="1765408966972" duration="203000" />
       <workItem from="1765409184282" duration="88000" />
       <workItem from="1765409444722" duration="377000" />
+      <workItem from="1765409950838" duration="2818000" />
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added ScriptsV2 as start of new setup of scripts">
+      <option name="closed" value="true" />
+      <created>1765410967423</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1765410967423</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added ScriptsV2 as start of new setup of scripts">
+      <option name="closed" value="true" />
+      <created>1765410976809</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765410976809</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added ScriptsV2 as start of new setup of scripts">
+      <option name="closed" value="true" />
+      <created>1765410984565</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765410984565</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Removing redundant folders&#10;Moving around feature folders">
+      <option name="closed" value="true" />
+      <created>1765411216672</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1765411216672</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +325,9 @@
     <MESSAGE value="Put old scripts back in place" />
     <MESSAGE value="Removed some weird .idea folders" />
     <MESSAGE value="Deleted ECS System scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted ECS System scripts" />
+    <MESSAGE value="Added ScriptsV2 as start of new setup of scripts" />
+    <MESSAGE value="Removing redundant folders&#10;Moving around feature folders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing redundant folders&#10;Moving around feature folders" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -212,6 +344,19 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/ScriptsV2/Features/World/WorldGridManager.cs</url>
+          <line>17</line>
+          <properties documentPath="C:\Users\dylan\Unity\DigDeeperV3\Assets\ScriptsV2\Features\World\WorldGridManager.cs" containingFunctionPresentation="Method 'GetWorldGrid'">
+            <startOffsets>
+              <option value="508" />
+            </startOffsets>
+            <endOffsets>
+              <option value="509" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

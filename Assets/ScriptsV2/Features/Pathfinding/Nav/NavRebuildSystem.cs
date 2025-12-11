@@ -1,5 +1,4 @@
 ﻿using Core;
-using Core.ECS;
 using GamePlay.Map.Generator.New.Core.WorldGen;
 using GamePlay.World;
 using GamePlay.World.Tilemap;
@@ -16,7 +15,7 @@ namespace GamePlay.Pathfinding.Nav {
     /// Recomputes NavBits for any <see cref="TileChunk"/> that changed this frame.
     /// Uses simple rules: Standable, Climbable, Water. Extend as needed.
     /// </summary>
-    public sealed class NavRebuildSystem : IEcsSystem {
+    public sealed class NavRebuildSystem {
         // flag constants reused from Tile.Flags (ladder, rope)
         private const byte HasLadder = 1 << 1;
         private const byte HasRope = 1 << 2;
@@ -25,7 +24,7 @@ namespace GamePlay.Pathfinding.Nav {
 
         private WorldRuntimeContext _worldRuntimeContext;
 
-        public void Tick(ECSWorld ecsWorld, float dt) {
+        public void Tick(float dt) {
             ProcessedEntitiesCount = 0;
 
             if (!ServiceLocator.TryGet(out _worldRuntimeContext)) {

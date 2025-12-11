@@ -9,13 +9,13 @@ using UnityEngine;
 
 namespace GamePlay.World {
     [CreateAssetMenu(menuName = "World/Prefab Map")]
-    public class WorldGeneratedPrefab : ScriptableObject , IWorldSource {
+    public class WorldGeneratedConfig : ScriptableObject , IWorldSource {
         public Tile[] Tiles;
-        public List<PrefabSpawnInfo> Prefabs;
+        public List<PrefabSpawnConfig> Prefabs;
         public int2 WorldSizeChunks { get; set; }
         public int2 SizeChunks { get; }
         
-        public IEnumerator LoadCoroutine(Action<WorldData> onDone, Action<float> onProgress, CancellationToken ct) {
+        public IEnumerator LoadCoroutine(Action<WorldDTO> onDone, Action<float> onProgress, CancellationToken ct) {
             throw new NotImplementedException();
         }
     }

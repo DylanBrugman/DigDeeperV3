@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using DigDeeper.WorldSystem;
-using GamePlay.World.DigDeeper.WorldSystem;
 using Systems.WorldSystem.Generator;
 using Unity.Mathematics;
 using UnityEngine;

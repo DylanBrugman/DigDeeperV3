@@ -18,4 +18,13 @@ namespace DigDeeper.WorldSystem {
         public float maxDepth = 100f; // Only exists at this depth or shallower
         [Range(0f, 1f)] public float depthFalloff = 0.2f; // How quickly influence fades at depth limits
     }
+    
+    public enum BiomeType {
+        Forrest,
+        Grassland,
+        Swamp,
+        Desert,
+        Tundra,
+        Snow,
+    }
 }

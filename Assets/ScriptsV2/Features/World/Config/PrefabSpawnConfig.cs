@@ -2,7 +2,7 @@
 
 namespace GamePlay.World {
     [Serializable]
-    public struct PrefabSpawnInfo {
+    public struct PrefabSpawnConfig {
         public string PrefabId;
         public int X, Y;
     }

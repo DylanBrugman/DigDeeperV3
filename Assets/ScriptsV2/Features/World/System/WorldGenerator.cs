@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Threading;
 using Core;
 using GamePlay.Map.Generator;
-using GamePlay.World.Tilemap.GenerationPipeline;
 using GamePlay.World.Tilemap.Generator;
 using Systems.WorldSystem;
 using Systems.WorldSystem.Generator;
@@ -30,7 +29,7 @@ namespace GamePlay.World {
             _worldGenerationSteps.Add(new TilemapGenerator());
         }
 
-        public IEnumerator LoadCoroutine(Action<WorldData> onDone, Action<float> onProgress, CancellationToken ct) {
+        public IEnumerator LoadCoroutine(Action<WorldDTO> onDone, Action<float> onProgress, CancellationToken ct) {
             CurrentWorldConfig = mapConfigs[configIndex];
             WorldGenerationContext context = new (
                 CurrentWorldConfig,
@@ -47,11 +46,11 @@ namespace GamePlay.World {
                 Debug.Log($"Finished world generation step: {worldGenerationStep.GetType().Name}");
             }
             
-            WorldData worldData = new WorldData(
+            WorldDTO worldDto = new WorldDTO(
                 context
             );
             Debug.Log("World generation completed successfully.");
-            onDone?.Invoke(worldData);
+            onDone?.Invoke(worldDto);
         }
 
         // public void Generate() {

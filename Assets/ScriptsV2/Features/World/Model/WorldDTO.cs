@@ -2,14 +2,14 @@
 using Unity.Mathematics;
 
 namespace GamePlay.World {
-    public sealed class WorldData
+    public sealed class WorldDTO
     {
         public TileChunk[] Chunks { get; set; }
         // public LiquidLayer Liquid { get; set; }
         // public GasLayer   Gas     { get; set; }
         public int2       SizeChunks { get; set; }
      
-        public WorldData(WorldGenerationContext context) {
+        public WorldDTO(WorldGenerationContext context) {
             throw new System.NotImplementedException();
         }
     }
