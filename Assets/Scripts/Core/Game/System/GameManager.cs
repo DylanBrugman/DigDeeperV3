@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using Core;
-using GamePlay.World;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,8 +13,8 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private GameState initialGameState = GameState.Playing;
     
     [Header("World load configuration")]
-    [SerializeField] private WorldSourceType worldSourceType;
-    private WorldLoader _worldLoader;
+    // [SerializeField] private WorldSourceType worldSourceType;
+    // private WorldLoader _worldLoader;
     
     private GameState _currentGameState;
 
@@ -31,7 +30,6 @@ public class GameManager : MonoBehaviour {
     }
 
     private IEnumerator Start() {
-        _worldLoader = ServiceLocator.GetOrThrow<WorldLoader>();
         _currentGameState = initialGameState;
         Debug.Log("Initial game state: " + initialGameState);
 
@@ -53,7 +51,9 @@ public class GameManager : MonoBehaviour {
                 }
                 break;
             case GameState.Playing:
-                // _worldLoader.Load(worldSourceType);
+                if (SceneManager.GetActiveScene().name != "GameScene") {
+                    SceneManager.LoadScene("GameScene");
+                }
                 break;
             case GameState.Paused:
                 break;

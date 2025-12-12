@@ -11,7 +11,7 @@ namespace Systems.WorldSystem {
     {
         [Header("World settings")]
         // public Vector2Int worldSize = new Vector2Int(200, 100);
-        public int2 worldSizeChunks = new int2(6, 3); // SIZE in chunks (32×32), not tiles
+        public Vector2Int worldSizeChunks = new Vector2Int(6, 3); // SIZE in chunks (32×32), not tiles
         
         [Header("Surface Settings")]
         public int surfaceAirHeightMinimal = 20;

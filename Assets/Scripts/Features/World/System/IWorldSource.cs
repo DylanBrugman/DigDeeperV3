@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections;
-using System.Threading;
-using Unity.Mathematics;
-using UnityEngine;
 
-namespace GamePlay.World {
+namespace Features.World.System {
     public interface IWorldSource {
-        IEnumerator Generate(Action<WorldDTO> onDone, Action<float> onProgress, CancellationToken ct);
+        IEnumerator Generate(Action<GamePlay.World.World> onDone);
     }
 }

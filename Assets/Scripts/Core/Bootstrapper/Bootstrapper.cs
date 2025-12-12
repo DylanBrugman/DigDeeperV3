@@ -1,8 +1,4 @@
-﻿// ===================================================================
-// UNITY AUTO-LOADING BOOTSTRAP METHODS
-// ===================================================================
-
-using System;
+﻿using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

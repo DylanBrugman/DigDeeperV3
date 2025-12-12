@@ -15,7 +15,7 @@ namespace GamePlay.World {
         public WorldGenerationConfig Config { get; }
         public Random Random { get; }
         public Dictionary<BiomeConfig, float> BiomeNoiseOffsets { get; }
-        public int2 WorldSizeChunks;
+        public Vector2Int WorldSizeChunks;
         public int[] SurfaceHeights { get; internal set; }
 
         public TilemapGeneratorContext(WorldGenerationConfig config, Random random, Dictionary<BiomeConfig, float> biomeNoiseOffsets) {

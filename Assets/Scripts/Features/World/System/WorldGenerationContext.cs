@@ -10,9 +10,20 @@ using Random = System.Random;
 namespace GamePlay.World {
     public class WorldGenerationContext {
         
-        // public WorldGenerationConfig Config { get; set; }
-        // public int2 WorldSizeChunks => Config.worldSizeChunks;
-        // public Random Random { get; private set; }
+        public WorldGenerationConfig Config { get; set; }
+        public Vector2Int WorldSizeChunks => Config.worldSizeChunks;
+        public Random Random { get; private set; }
+        public World World { get; private set; }
+
+        public WorldGenerationContext(WorldGenerationConfig config, Random random, World world) {
+            Config = config;
+            Random = random;
+            World = world;
+        }
+
+        public WorldGenerationContext() {
+        }
+
         // public TileGrid TileGrid { get; private set; }
         // public DepthGrid DepthGrid { get; internal set; }
         // // public Dictionary<BiomeConfig, float> BiomeNoiseOffsets { get; }
