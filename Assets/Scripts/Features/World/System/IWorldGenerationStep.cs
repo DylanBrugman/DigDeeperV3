@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections;
+﻿using System.Threading.Tasks;
+using Features.World.Model;
 
-namespace GamePlay.World {
+namespace Features.World.System {
     public interface IWorldGenerationStep
     {
         string StepName { get; }
-        IEnumerator GenerateStep(WorldGenerationContext worldGenerationContext);
+        Task GenerateStep(WorldGenerationContext worldGenerationContext);
     }
 }

@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 66de9d17884ca494087696efbff65552
+  - enabled: 1
+    path: Assets/Scenes/PersistentScene.unity
+    guid: 5324b5962ca91d543a48a8ed6ad05444
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

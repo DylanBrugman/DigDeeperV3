@@ -1,28 +1,36 @@
-﻿using System.Collections.Generic;
-using DigDeeper.WorldSystem;
-using GamePlay.World.Tilemap;
-using Systems.WorldSystem;
-using Unity.Collections;
-using Unity.Mathematics;
-using UnityEngine;
-using Random = System.Random;
+﻿using System;
+using System.Collections.Generic;
 
-namespace GamePlay.World {
+namespace Features.World.System {
     public class WorldGenerationContext {
-        
-        public WorldGenerationConfig Config { get; set; }
-        public Vector2Int WorldSizeChunks => Config.worldSizeChunks;
-        public Random Random { get; private set; }
-        public World World { get; private set; }
-
-        public WorldGenerationContext(WorldGenerationConfig config, Random random, World world) {
-            Config = config;
-            Random = random;
-            World = world;
+        private readonly Dictionary<Type, object> _results = new();
+    
+        public void Set<T>(T result) => _results[typeof(T)] = result;
+    
+        public T Get<T>() {
+            if (!_results.TryGetValue(typeof(T), out object result)) {
+                throw new InvalidOperationException($"Missing dependency: {typeof(T).Name}");
+            }
+            return (T)result;
         }
-
-        public WorldGenerationContext() {
-        }
+    }
+    
+    
+    // public class WorldGenerationContext {
+    //     
+    //     public WorldGenerationConfig Config { get; set; }
+    //     public Vector2Int WorldSizeChunks => Config.worldSizeChunks;
+    //     public Random Random { get; private set; }
+    //     public World World { get; private set; }
+    //
+    //     public WorldGenerationContext(WorldGenerationConfig config, Random random, World world) {
+    //         Config = config;
+    //         Random = random;
+    //         World = world;
+    //     }
+    //
+    //     public WorldGenerationContext() {
+    //     }
 
         // public TileGrid TileGrid { get; private set; }
         // public DepthGrid DepthGrid { get; internal set; }
@@ -38,5 +46,5 @@ namespace GamePlay.World {
         // }
         //
         // public int2 GetWorldSizeTiles() => new int2(WorldSizeChunks.x * 32, WorldSizeChunks.y * 32);
-    }
+    // }
 }
